@@ -745,22 +745,18 @@ void DBImpl::CompactMemTable() {
   mutex_.AssertHeld();
   assert(imm_ != nullptr);
 
-  // Save the contents of the memtable as a new Table
   VersionEdit edit;
-  //uint64_t start = env_->NowMicros();
+
   Status s = WriteLevel0Table(imm_, &edit);
-  //uint64_t end = env_->NowMicros();
-  //dumptime += (end - start);
+
 
   if (s.ok() && shutting_down_.load(std::memory_order_acquire)) {
     s = Status::IOError("Deleting DB during memtable compaction");
   }
 
-  // Replace immutable memtable with the generated Table
   if (s.ok()) {
     edit.SetPrevLogNumber(0);
-    edit.SetLogNumber(logfile_number_);  // Earlier logs no longer needed
-    //std::cout << "LogAndApply in CompactMemTable" << std::endl;
+    edit.SetLogNumber(logfile_number_); 
     s = versions_->LogAndApply(&edit, &mutex_);
   }
   if (s.ok()) {
@@ -2033,7 +2029,6 @@ Status DB::Delete(const WriteOptions& opt, const Slice& key) {
 
   impl->mutex_.Lock();
   VersionEdit edit;
-  // Recover handles create_if_missing, error_if_exists
   bool save_manifest = false;
   Status s = impl->Recover(&edit, &save_manifest);
   if (s.ok() && impl->mem_ == nullptr) {
@@ -2051,8 +2046,6 @@ Status DB::Delete(const WriteOptions& opt, const Slice& key) {
       impl->mem_->Ref();
     }
     
-  }else{
-    printf(" : %s\n",s.ToString().c_str());
   }
   if (s.ok() && save_manifest) {
     edit.SetPrevLogNumber(0);  // No older logs needed after recovery.
