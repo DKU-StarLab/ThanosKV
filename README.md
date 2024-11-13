@@ -14,12 +14,16 @@ git clone --recurse-submodules https://github.com/ErosBryant/Thanoskv.
 ## Building
 > This project supports CMake.
 
+cmake_minimum_required(VERSION 3.9)
+
 ```bash
 cd Thanoskv && mkdir -p build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
 ```
-Set SSD path: /Thanoskv/include/leveldb/nvm_option.h
+<!-- ```
 
+Set SSD path: /Thanoskv/include/leveldb/nvm_option.h
+``` -->
 
 ### Benchmarking
 
