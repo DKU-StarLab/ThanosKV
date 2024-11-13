@@ -842,72 +842,10 @@ class Duration {
 
 
   void YCSBWorkload(ThreadState* thread) {
-    printf("sssssssssssssssssssssssssssssssssss\n");
-
-    // if( thread->tid == thread->shared->total - 1 ) {  //record latency and throughput per second
-    //     printf("sssssssssssssssssssssssssssssssssss1\n");
-    //   uint64_t last_ops = 0;
-    //   uint64_t start_time=g_env->NowMicros();
-    //   uint64_t last_time = start_time;
-    //   uint64_t now_done = 0;
-    //   uint64_t per_second_done;
-    //   uint64_t now_time;
-      
-    //   while(true) {
-    //     if( thread->shared->num_done >= thread->shared->total - 1 ) break;
-    //     sleep(1);
-    //     printf("test\n");
-    //     now_time = g_env->NowMicros();
-    //     thread->shared->latencys_mutex.Lock();
-    //     now_done = thread->shared->ops_num;
-    //     thread->shared->latencys_mutex.Unlock();
-
-    //     per_second_done = now_done - last_ops;
-    //     double use_time = (now_time - last_time)*1e-6;
-    //     int64_t ebytes = (value_size_ + key_size_) * per_second_done;
-    //     int64_t now_bytes = (value_size_ + key_size_) * now_done;
-    //     double now = (now_time - start_time)*1e-6;
-
-    //     // RECORD_INFO(1,"now=,%.2f,s speed=,%.2f,MB/s,%.1f,iops size=,%.1f,MB average=,%.2f,MB/s,%.1f,iops ,\n",
-    //     //             now,(1.0*ebytes/1048576.0)/use_time,1.0*per_second_done/use_time,1.0*now_bytes/1048576.0,(1.0*now_bytes/1048576.0)/now,1.0*now_done/now);
-        
-    //     uint64_t *ops_latency = thread->shared->latencys;
-    //     std::sort(ops_latency + last_ops, ops_latency + now_done);
-    //     /* for(uint64_t i = last_ops; i < now_done; i++) {
-    //       printf("%lu,%lu,%lu,%lu\n",i,ops_latency[i].stay_queue_time,ops_latency[i].execute_time,ops_latency[i].stay_queue_time + ops_latency[i].execute_time);
-    //     } */
-    //     if (per_second_done > 2) {
-    //       uint64_t cnt90 = 0.90 * per_second_done - 1 + last_ops;
-    //       uint64_t cnt99 = 0.99 * per_second_done - 1 + last_ops;
-    //       uint64_t cnt999 = 0.999 * per_second_done - 1 + last_ops;
-    //       uint64_t cnt9999 = 0.9999 * per_second_done - 1 + last_ops;
-    //       uint64_t cnt99999 = 0.99999 * per_second_done - 1 + last_ops;
-
-    //       //printf("per_second_done:%lu,last_ops:%lu,cnt90:%lu,cnt99:%lu,%lu,%lu,%lu\n",per_second_done,last_ops,cnt90,cnt99,cnt999,cnt9999,cnt99999);
-
-    //     //   RECORD_INFO(5,"%.2f,%.1f,%lu,,,%lu,,,%lu,,,%lu,,,%lu,,,\n",
-    //     //             now,1.0*per_second_done/use_time,
-    //     //             ops_latency[cnt90],
-    //     //             ops_latency[cnt99],
-    //     //             ops_latency[cnt999],
-    //     //             ops_latency[cnt9999],
-    //     //             ops_latency[cnt99999]);
-    //      }
-        
-
-    //     last_ops = now_done;
-    //     last_time = now_time;
-
-    //   }
-    // return;
-    // }
 
     ReadOptions options;
     RandomGenerator gen;
-    
-
-    printf("sssssssssssssssssssssssssssssssssss222\n");
-
+  
     init_zipf_generator(0, FLAGS_num);
     
     std::string value;
@@ -947,7 +885,7 @@ while (true) {
     }
 
      
-      printf("sssssssssssssssssssssssssssssssssss33333\n");
+  
       long k;
       if (FLAGS_YCSB_uniform_distribution){
         //Generate number from uniform distribution            
