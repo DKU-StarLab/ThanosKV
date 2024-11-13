@@ -212,7 +212,7 @@ DBImpl::DBImpl(const Options& raw_options, const std::string& dbname)
                                &internal_comparator_)),
       versions_(new VersionSet(dbname_, &options_,
                                &internal_comparator_)) {
-  
+    // creat the nvm index
      b_index_ = CreateBtreeIndex();
     for (int i = 0; i < config::kNumLevels; i++) {
     background_compaction_scheduled_[i] = false;
