@@ -1262,7 +1262,7 @@ int main(int argc, char** argv) {
     FLAGS_db = default_db_path.c_str();
   }
 
-  leveldb::nvram::create_pool("/mnt/pmemdir/NVM.pool", static_cast<size_t>(7) * 1024 * 1024 * 1024);
+  leveldb::nvram::create_pool("/mnt/pmemdir/NVM.pool", static_cast<size_t>(8) * 1024 * 1024 * 1024);
 
   leveldb::Benchmark benchmark;
 
