@@ -1,1 +1,2 @@
-- WriteLevel0Table: Pmtable to  SSTable
+- WriteLevel0Table: Memtable to Pmtable
+- WriteLeveltoSsTable : Pmtable to  SSTable
