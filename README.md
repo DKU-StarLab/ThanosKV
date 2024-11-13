@@ -8,7 +8,7 @@ ThanosKV is a novel LSM-tree-based key-value store that holistically exploits th
 
 ### Download
 ```bash
-git clone --recurse-submodules https://github.com/ErosBryant/Thanoskv.
+git clone --recurse-submodules https://github.com/DKU-StarLab/ThanosKV.git
 ```
 
 ## Building
