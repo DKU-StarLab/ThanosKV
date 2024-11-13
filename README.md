@@ -5,26 +5,13 @@ ThanosKV is a novel LSM-tree-based key-value store that holistically exploits th
 - https://pmem.io/blog/2016/02/how-to-emulate-persistent-memory
 
 
-- NUMA
-```bash
-sudo apt update
-sudo apt install numactl
-sudo apt-get install libnuma-dev
-
-sudo numactl --show
-```
-
-
-
-
-## Download
+### Download
 ```bash
 git clone --recurse-submodules https://github.com/ErosBryant/Thanoskv.git
 
 ```
 
 ```bash
-
 cd Thanoskv && mkdir -p build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
 ```
