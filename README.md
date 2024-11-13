@@ -2,6 +2,7 @@
 ThanosKV is a novel LSM-tree-based key-value store that holistically exploits the non-volatility and byte-addressability of NVM.
 
 ### Dependencies
+> If you do not have access to an NVM device, please refer to the following website.
 - https://pmem.io/blog/2016/02/how-to-emulate-persistent-memory
 
 
