@@ -1,4 +1,5 @@
 - WriteLevel0Table: Memtable to Pmtable
-- WriteLeveltoSsTable : Pmtable to SSTable
+- WriteLeveltoSsTable: Pmtable to SSTable
+- Compactpmtable: Compaction of Pmtable
 - dbname_(dbname): NVM path
 - dbname_ssd_(raw_options.nvm_option.sst_path): SSD path
