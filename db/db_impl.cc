@@ -2028,10 +2028,9 @@ Status DB::Delete(const WriteOptions& opt, const Slice& key) {
   *dbptr = nullptr;
 
 
-  // DBImpl* impl = new DBImpl(options, dbname_disk, dbname_mem);
+  // dbname_ is the path to the nvm device
   DBImpl* impl = new DBImpl(options,dbname_);
-  // printf("dbname_disk: %s\n",  impl->dbname_ssd_.c_str());
-  // printf("dbname_mem: %s\n",  impl->dbname_.c_str());
+
 
   impl->mutex_.Lock();
   VersionEdit edit;
