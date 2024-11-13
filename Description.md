@@ -4,3 +4,5 @@
 - DoCompactionWork_sst: Compaction of SSTable
 - dbname_(dbname): NVM path
 - dbname_ssd_(raw_options.nvm_option.sst_path): SSD path
+
+There are 4 pmtables in each nvm level.
