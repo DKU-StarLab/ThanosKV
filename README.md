@@ -16,22 +16,11 @@ cd Thanoskv && mkdir -p build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
 ```
 
-
-## Set nvm version
+### Set nvm version
 
 ```
 scripts/mount_dax.sh
 ```
 
-- ### git
-```
-git log
-git restore .
-git checkout ___
-
-
-- branch
-git checkout __
-```
 
 
