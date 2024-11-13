@@ -9,4 +9,3 @@
 - VersionSet_sst: version control of SSTable
 - VersionSet:version control of Pmtable
   
-There are 4 pmtables in each nvm level.
