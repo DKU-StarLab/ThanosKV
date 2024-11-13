@@ -1,3 +1,4 @@
+## Function description
 - WriteLevel0Table: Memtable to Pmtable
 - WriteLeveltoSsTable: Pmtable to SSTable
 - DoCompactionWork: Compaction of Pmtable
