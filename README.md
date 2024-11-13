@@ -20,6 +20,12 @@ cmake_minimum_required(VERSION 3.9)
 cd Thanoskv && mkdir -p build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
 ```
+
+```
+scripts/mount_dax.sh
+```
+
+
 <!-- ```
 
 Set SSD path: /Thanoskv/include/leveldb/nvm_option.h
@@ -27,11 +33,6 @@ Set SSD path: /Thanoskv/include/leveldb/nvm_option.h
 
 
 
-<!-- ### Set nvm version
-
-```
-scripts/mount_dax.sh
-``` -->
 
 
 
