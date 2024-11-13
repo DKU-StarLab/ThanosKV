@@ -893,16 +893,16 @@ while (true) {
       } else { //default
         //Generate number from zipf distribution
         k = nextValue() % FLAGS_num;        
-        printf("??\n") ;
+
       }
       GenerateKeyFromInt(k, FLAGS_num, &key);
 
       if (FLAGS_report_ops_latency) {   //
         per_op_start_time = g_env->NowMicros();
       }
-        printf("?1?\n") ;
+
       int next_op = thread->rand.Next() % 100;
-              printf("?2?\n") ;
+
       if (next_op < 50){
         printf("read\n");
         Status s = db_->Get(options, key, &value);
@@ -919,8 +919,7 @@ while (true) {
         reads_done++;
 
       } else{
-        printf("write\n");
-        //write
+
         // if (FLAGS_benchmark_write_rate_limit > 0) {
             
         //     thread->shared->write_rate_limiter->Request(
