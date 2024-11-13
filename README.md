@@ -12,7 +12,7 @@ git clone --recurse-submodules https://github.com/DKU-StarLab/ThanosKV.git
 ```
 
 ## Building
-> This project supports CMake.
+> This project supports [CMake](https://cmake.org/) out of the box.
 
 cmake_minimum_required(VERSION 3.9)
 
