@@ -8,8 +8,7 @@ ThanosKV is a novel LSM-tree-based key-value store that holistically exploits th
 
 ### Download
 ```bash
-git clone --recurse-submodules https://github.com/ErosBryant/Thanoskv.git
-
+git clone --recurse-submodules https://github.com/ErosBryant/Thanoskv.
 ```
 
 ## Building
@@ -19,8 +18,12 @@ git clone --recurse-submodules https://github.com/ErosBryant/Thanoskv.git
 cd Thanoskv && mkdir -p build && cd build
 cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
 ```
+Set SSD path: /Thanoskv/include/leveldb/nvm_option.h
+
 
 ### Benchmarking
+
+
 
 
 
