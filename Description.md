@@ -5,5 +5,6 @@
 - dbname_(dbname): NVM path
 - dbname_ssd_(raw_options.nvm_option.sst_path): SSD path
 - leveldb::nvram::create_pool: create_pool nvm pool
+- CreateBtreeIndex: creat nvm index
   
 There are 4 pmtables in each nvm level.
