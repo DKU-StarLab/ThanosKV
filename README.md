@@ -1,4 +1,5 @@
-## NVM_Leveldb
+## ThanosKV: A Holistic Approach to Utilize NVM for LSM-tree based Key-Value Stores
+
 
 ### Dependencies
 - https://pmem.io/blog/2016/02/how-to-emulate-persistent-memory
