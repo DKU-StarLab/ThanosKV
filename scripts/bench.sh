@@ -2,11 +2,11 @@
 
 db_path="/mnt/pmemdir/"
 
-outfilepath="/home/eros/workspace-lsm/Thanoskv2/bench_result_20G"
+outfilepath="..."
 # output file
 outfile="$outfilepath/result.out"
 # db_bench binary path
-bench_path="/home/eros/workspace-lsm/Thanoskv2/build"
+bench_path=".."
 
 # test type in db_bench
 test_type="fillrandom,stats,readrandom"
