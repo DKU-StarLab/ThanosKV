@@ -13,6 +13,7 @@ git clone --recurse-submodules https://github.com/ErosBryant/Thanoskv.git
 ```
 
 ## Building
+> This project supports CMake.
 
 ```bash
 cd Thanoskv && mkdir -p build && cd build
