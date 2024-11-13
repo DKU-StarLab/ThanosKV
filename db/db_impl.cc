@@ -178,6 +178,7 @@ static int TableCacheSize(const Options& sanitized_options) {
 }
 
 // DBImpl::DBImpl(const Options& raw_options, const std::string& dbname_disk, const std::string& dbname_mem)
+// if you want to change the dbpath, you should change the dbpath in theDBImpl::DBImpl()
 DBImpl::DBImpl(const Options& raw_options, const std::string& dbname)
     : env_(raw_options.env),
 

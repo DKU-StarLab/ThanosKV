@@ -25,10 +25,6 @@ cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
 Set SSD path: /Thanoskv/include/leveldb/nvm_option.h
 ``` -->
 
-### Benchmarking
-
-
-
 
 
 ### Set nvm version
