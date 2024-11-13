@@ -1269,7 +1269,7 @@ int main(int argc, char** argv) {
   benchmark.Run();
   // leveldb::BtreeIndex bi;
 
-  std::cout<<"done~~\n"<<std::endl;
+  // std::cout<<"done~~\n"<<std::endl;
   leveldb::nvram::close_pool();
   return 0;
 }
