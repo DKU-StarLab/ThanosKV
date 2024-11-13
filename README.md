@@ -3,18 +3,7 @@ ThanosKV is a novel LSM-tree-based key-value store that holistically exploits th
 
 ### Dependencies
 - https://pmem.io/blog/2016/02/how-to-emulate-persistent-memory
-```
-E.g. memmap=4G!12G reserves 4GB of memory between 12th and 16th GB. Configuration is done within GRUB, and varies between Linux distributions. Here are two examples of GRUB configuration.
 
-Ubuntu Server 15.04
-
-# sudo vi /etc/default/grub
-
-GRUB_CMDLINE_LINUX="memmap=nn[KMG]!ss[KMG]"
-
-# sudo update-grub2
-
-```
 
 - NUMA
 ```bash
