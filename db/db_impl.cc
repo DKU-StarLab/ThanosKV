@@ -190,7 +190,6 @@ DBImpl::DBImpl(const Options& raw_options, const std::string& dbname)
       owns_cache_(options_.block_cache != raw_options.block_cache),
       dbname_(dbname),
       dbname_ssd_(raw_options.nvm_option.sst_path),
-      //dbname_(raw_options.nvm_option.pmem_path),
       mem_stall_time_(0),
       L0_stop_stall_time_(0),
       l0_slow_tall_time_(0),

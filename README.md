@@ -27,11 +27,11 @@ Set SSD path: /Thanoskv/include/leveldb/nvm_option.h
 
 
 
-### Set nvm version
+<!-- ### Set nvm version
 
 ```
 scripts/mount_dax.sh
-```
+``` -->
 
 
 
