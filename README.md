@@ -23,6 +23,7 @@ cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build .
 
 ```
 scripts/mount_dax.sh
+scripts/bench.sh
 ```
 
 
