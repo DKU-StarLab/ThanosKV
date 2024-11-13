@@ -1,5 +1,5 @@
 ## ThanosKV: A Holistic Approach to Utilize NVM for LSM-tree based Key-Value Stores
-
+ThanosKV is a novel LSM-tree-based key-value store that holistically exploits the non-volatility and byte-addressability of NVM.
 
 ### Dependencies
 - https://pmem.io/blog/2016/02/how-to-emulate-persistent-memory
